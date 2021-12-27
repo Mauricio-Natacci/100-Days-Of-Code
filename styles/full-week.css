@@ -48,6 +48,11 @@ h2 {
   font-family: 'Oswald', sans-serif;
 }
 
+main p {
+  margin: 12px;
+  color: rgb(71, 29, 22);
+}
+
 .highlight-goal {
   background-color: rgb(226, 115, 101);
 }
