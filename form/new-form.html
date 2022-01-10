@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/form/styles/new-form.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+
+    <main>
+      <form action="/form/new-form.html" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="username">Your name</label>
+              <input
+                type="text"
+                name="user-name"
+                id="username"
+                required
+                placeholder="Mauricio"
+              />
+            </li>
+            <li>
+              <label for="useremail">Your E-mail Address</label>
+              <input
+                type="email"
+                name="user-email"
+                id="useremail"
+                required
+                placeholder="mauricio@example.com"
+              />
+            </li>
+            <li>
+              <label for="userphone">Your Phone Number</label>
+              <input
+                type="text"
+                name="user-password"
+                id="userphone"
+                required
+                placeholder="(xx)9 xxxx-xxxx"
+              />
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <label for="usermessage">Your message</label>
+          <textarea
+            id="usermessage"
+            name="user-message"
+            required
+            rows="6"
+            placeholder="type something..."
+          ></textarea>
+        </section>
+        <section>
+          <label for="howfindus">How did you find us?</label>
+          <select id="howfindus" name="how-find-us">
+            <option value="websearch">Web Search</option>
+            <option value="wordofmouth">Word of Mouth</option>
+            <option value="other">Other</option>
+          </select>
+        </section>
+
+        <section>
+          <h2>How should we repply?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                value="text-message"
+                id="verify-text-message"
+                required
+              />
+              <label for="verify-text-message">Call me</label>
+            </li>
+
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                value="phone"
+                id="verify-phone"
+                required
+              />
+              <label for="verify-phone">Send me an email</label>
+            </li>
+
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                value="email"
+                id="verify-email"
+                required
+              />
+              <label for="verify-email">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <div id="terms" class="form-control-inline">
+            <input type="checkbox" id="agree-terms" name="terms" />
+            <label for="agree-terms">Accept Terms</label>
+          </div>
+        </section>
+
+        <section class="btn">
+          <button id="clear" type="reset">Clear</button>
+          <button type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+    <footer>
+      <a href="/form/index.html">Back to the first form</a>
+
+      <a href="/index.html">Back to Main Page</a>
+    </footer>
+  </body>
+</html>
